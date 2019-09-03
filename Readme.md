@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Salima Askaralieva](https://up.htmlacademy.ru/htmlcss/26/user/1179471).
-* Наставник: `Неизвестно`.
+* Наставник: [Анна Пономарёва](https://htmlacademy.ru/profile/id153610).
 
 ---
 

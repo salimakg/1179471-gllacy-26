@@ -14,7 +14,7 @@
         <ul class="main-nav">
           <li>
             <a href="/catalog">Каталог</a>
-            <ul class="visually-hidden">
+            <ul style="display: none;">
               <li><a href="#">Новинки</a></li>
               <li><a href="#">Сливочное</a></li>
               <li><a href="#">Щербеты</a></li>
@@ -31,20 +31,24 @@
       <ul class="secondary-nav">
         <li>
           <a href="#">Поиск</a>
-          <section class="visually-hidden">
-            <form action="http.//echo.htmlacademy.ru" method="post">
-              <input type="text" name="search" placeholder="Что ищем?">
+          <section style="display: none;">
+            <form action="http://echo.htmlacademy.ru" method="post">
+              <label for="search">Поиск</label>
+              <input type="text" name="search" placeholder="Что ищем?" id="search">
+              <button type="submit">Отправить</button>
             </form>
           </section>
         </li>
         <li>
           <a href="#">Вход</a>
-          <section class="visually-hidden">
-            <form action="http.//echo.htmlacademy.ru" method="post">
+          <section style="display: none;">
+            <form action="http://echo.htmlacademy.ru" method="post">
               <p>
+                  <label for="email">Электронная почта</label>
                 <input type="email" name="email" placeholder="Электронная почта">
               </p>
               <p>
+                <label for="password">Пароль</label>
                 <input type="password" name="password" placeholder="Пароль">
               </p>
               <button type="submit">Войти</button>
@@ -72,6 +76,7 @@
     <h1>Gllacy Shop</h1>
 
     <section class="features">
+      <h2>Особенности</h2>
       <b>Магазин Глейси- это онлайн- и офлайн-магазин по продаже мороденого собственного производство на развес</b>
       <div>
         <p>Все наше мороженое изготовливается на собственном производстве, с изпользованием современного оборудования и проверенных временем технологий.</p>
@@ -82,7 +87,7 @@
     </section>
     
     <section>
-      
+      <h2>Блог</h2>
       <article class="blog">
         <p>Новое в нашем блоге</p>
         <h1><a href="#">10 способов сервировки фруктовых щербетов к столу</a></h1>
@@ -100,10 +105,10 @@
 
     
       <ul class="social-links">
-        <li><a href="http://twitter.com" aria-label="Твиттер">Твиттер</a></li>
-        <li><a href="http://instagram.com" aria-label="Инстаграм">Инстаграм</a></li>
-        <li><a href="http://facebook.com" aria-label="Фейсбук">Фейсбук</a></li>
-        <li><a href="http://vk.com" aria-label="вконтакте">вконтакте</a></li>
+        <li><a href="http://twitter.com" aria-label="Твиттер"></a></li>
+        <li><a href="http://instagram.com" aria-label="Инстаграм"></a></li>
+        <li><a href="http://facebook.com" aria-label="Фейсбук"></a></li>
+        <li><a href="http://vk.com" aria-label="вконтакте"></a></li>
       </ul>
     
 
@@ -121,18 +126,21 @@
       <p>Сделано в <a href="#">HTML Academy</a> &copy; 2019</p>
     </div>
   </footer>
-    <section class="visually-hidden">
+    <section style="display: none;">
       <h1>Мы обязательно вам ответим!</h1>
       <button type="button">X</button>
-      <form action="http.//echo.htmlacademy.ru" method="post">
+      <form action="http.//echo:htmlacademy.ru" method="post">
       <p>
-        <input type="text" name="name" placeholder="Как вас зовут?">
+        <label for="name">Как вас зовут?</label>
+        <input type="text" name="name" placeholder="Как вас зовут?" id="name">
       </p>
       <p>
-        <input type="email" name="email" placeholder="Ваша почта для ответа?">
+        <label for="email">Ваша почта для ответа?</label>
+        <input type="email" name="email" placeholder="Ваша почта для ответа?" id="email">
       </p>
       <p>
-        <textarea  cols="30" rows="10" name="message" placeholder="Напишите что нибудь.."></textarea>
+        <label for="message">Напишите что нибудь..</label>
+        <textarea  cols="30" rows="10" name="message" placeholder="Напишите что нибудь.." id="message"></textarea>
       </p>
       <button type="submit">Отправить</button>
       </form>

@@ -3,24 +3,28 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="inner-page">
   
   <header>
     <div>
-      <a href="/index" class="logo"><img src="img/index-logo.svg" width="154" height="64" alt="Логотип Gllacy Shop"></a>
-      <nav>
-        <ul class="main-nav">
-          <li><a href="/catalog">Каталог</a></li>
-          <li><a href="/delivery-and-payment">Доставка и оплата</a></li>
-          <li><a href="/about-company">О компании</a></li>
+      <a class="main-header-logo" href="/index" class="logo"><img src="img/index-logo.svg" width="154" height="64" alt="Логотип Gllacy Shop"></a>
+      <nav class="site-navigation">
+        <ul>
+          <li><a href="/catalog" class="link-light active">Каталог</a></li>
+          <li><a href="/delivery-and-payment" class="link-light">Доставка и оплата</a></li>
+          <li><a href="/about-company" class="link-light">О компании</a></li>
         </ul>
       </nav>
           
-        <ul class="secondary-nav">
+      <nav class="user-navigation">
+        <ul>
           <li>
-            <a href="#">Поиск</a>
-            <section>
+            <a href="#" class="link-light">Поиск</a>
+            <section class="search-form">
               <form action="https://echo.htmlacademy.ru/" method="post">
                 <label for="search">Поиск</label>
                 <input type="text" name="search" placeholder="Что ищем?" id="search">
@@ -29,8 +33,8 @@
             </section>
           </li>
           <li>
-            <a href="#">Вход</a>
-            <section>
+            <a href="#" class="link-light">Вход</a>
+            <section class="email-form">
               <form action="https://echo.htmlacademy.ru/" method="post">
                 <p>
                   <label for="email">Электронная почта</label>
@@ -42,28 +46,28 @@
                 </p>
                 <button type="submit">Войти</button>
                 <div class="form-links">
-                  <a href="#">Забыли пароль?</a><br>
-                  <a href="#">Новая регистрация</a>
+                  <a href="#" class="link-dark">Забыли пароль?</a><br>
+                  <a href="#" class="link-dark">Новая регистрация</a>
                 </div>
               </form>
             </section>
           </li>
           <li>
-            <a href="#">2 товара</a>
-            <section>
+            <a href="#" class="link-dark has-products">2 товара</a>
+            <section class="product-form"> 
               <h2 class="visually-hidden">Товары</h2>
               <ul>
                 <li>
                   <button type="button">X</button>
                   <img src="img/icecream1.jpg" width="267" height="267" alt="">
-                  <a href="#">Пломбир с апельсиновым джемом</a>
+                  <a href="#" class="link-dark">Пломбир с апельсиновым джемом</a>
                   <span>1,5 кг х 200 руб.</span>
                   <span>300 руб.</span>
                 </li>
                 <li>
                   <button type="button">X</button>
                   <img src="img/icecream3.jpg" width="267" height="267" alt="">
-                  <a href="#">Клубничный пломбир с присыпкой из белого шоколада</a>
+                  <a href="#" class="link-dark">Клубничный пломбир с присыпкой из белого шоколада</a>
                   <span>1,5 кг х 300 руб.</span>
                   <span>0 руб.</span>
                 <form action="https://echo.htmlacademy.ru/" method="post">
@@ -75,7 +79,7 @@
             </section>
           </li>
         </ul>
-      
+      </nav>
     </div>
     
     <div class="contacts">
@@ -87,96 +91,96 @@
   <main>
     
       <ul class="breadcrumbs">
-        <li><a href="main">Главная</a></li>
-        <li><a href="catalog">Каталог</a></li>
-        <li><a href="creamy">Сливочный</a></li>
+        <li><a href="main" class="link-light">Главная</a></li>
+        <li><a href="catalog" class="link-light">Каталог</a></li>
+        <li><a href="creamy" class="link-light">Сливочный</a></li>
       </ul>
     
-      <h1>Сливочное мороженое</h1>
-    </div>
+    <h1>Сливочное мороженое</h1>
+    
 
     <section class="products">
       <h2 class="visually-hidden">Продукты</h2>
       <div class="product">
         <img src="img/icecream1.jpg" width="267" height="267" alt="">
-        <span>310р<span>/кг</span></span>
-        <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-        <a href="#">Быстрый просмотр</a>
+        <span class="price">310р<span>/кг</span></span>
+        <a href="#" class="link-light">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+        <a href="#" class="button button-small">Быстрый просмотр</a>
       </div>
       
       <div class="product">
         <img src="img/icecream2.jpg" width="267" height="267" alt="">
-        <span>380р<span>/кг</span></span>
-        <a href="#">Сливочно-кофейное с кусочками шоколада</a>
-        <a href="#">Быстрый просмотр</a>
+        <span class="price">380р<span class="weight">/кг</span></span>
+        <a href="#" class="link-light">Сливочно-кофейное с кусочками шоколада</a>
+        <a href="#" class="button button-small">Быстрый просмотр</a>
       </div>
 
       <div class="product">
         <img src="img/icecream3.jpg" width="267" height="267" alt="">
-        <span>355р<span>/кг</span></span>
-        <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
-        <a href="#">Быстрый просмотр</a>
+        <span class="price">355р<span>/кг</span></span>
+        <a href="#" class="link-light">Сливочно-клубничное с присыпкой из белого шоколада</a>
+        <a href="#" class="button button-small">Быстрый просмотр</a>
       </div>
       <div class="product">
         <img src="img/icecream4.jpg" width="267" height="267" alt="">
-        <span>415р<span>/кг</span></span>
-        <a href="#">Сливочное крем-брюле с карамельной подливокй</a>
-        <a href="#">Быстрый просмотр</a>
+        <span class="price">415р<span>/кг</span></span>
+        <a href="#" class="link-light">Сливочное крем-брюле с карамельной подливокй</a>
+        <a href="#" class="button button-small">Быстрый просмотр</a>
       </div>
       <div class="product">
         <img src="img/icecream5.jpg" width="267" height="267" alt="">
-        <span>325р<span>/кг</span></span>
-        <a href="#">Сливочное с брусничным джемом</a>
-        <a href="#">Быстрый просмотр</a>
+        <span class="price">325р<span>/кг</span></span>
+        <a href="#" class="link-light">Сливочное с брусничным джемом</a>
+        <a href="#" class="button button-small">Быстрый просмотр</a>
       </div>
 
       <div class="product">
         <img src="img/icecream6.jpg" width="267" height="267" alt="">
-        <span>410р<span>/кг</span></span>
-        <a href="#">Сливочно-черничное с цельными ягодами черники</a>
-        <a href="#">Быстрый просмотр</a>
+        <span class="price">410р<span>/кг</span></span>
+        <a href="#" class="link-light">Сливочно-черничное с цельными ягодами черники</a>
+        <a href="#" class="button button-small">Быстрый просмотр</a>
       </div>
 
       <div class="product">
         <img src="img/icecream7.jpg" width="267" height="267" alt="">
-        <span>375р<span>/кг</span></span>
-        <a href="#">Сливочно-лимонное с карамельной присыпкой</a>
-        <a href="#">Быстрый просмотр</a>
+        <span class="price">375р<span>/кг</span></span>
+        <a href="#" class="link-light">Сливочно-лимонное с карамельной присыпкой</a>
+        <a href="#" class="button button-small">Быстрый просмотр</a>
       </div>
 
       <div class="product">
         <img src="img/icecream8.jpg" width="267" height="267" alt="">
-        <span>320р<span>/кг</span></span>
-        <a href="#">Сливочное с шоколадной стружкой</a>
-        <a href="#">Быстрый просмотр</a>
+        <span class="price">320р<span>/кг</span></span>
+        <a href="#" class="link-light">Сливочное с шоколадной стружкой</a>
+        <a href="#" class="button button-small">Быстрый просмотр</a>
       </div>
 
       <div class="product">
         <img src="img/icecream9.jpg" width="267" height="267" alt="">
-        <span>440р<span>/кг</span></span>
-        <a href="#">Сливочно-ванильное с кусочками шоколада</a>
-        <a href="#">Быстрый просмотр</a>
+        <span class="price">440р<span>/кг</span></span>
+        <a href="#" class="link-light">Сливочно-ванильное с кусочками шоколада</a>
+        <a href="#" class="button button-small">Быстрый просмотр</a>
       </div>
 
       <div class="product">
         <img src="img/icecream10.jpg" width="267" height="267" alt="">
-        <span>р<span>/кг</span></span>
-        <a href="#">Сливочное с ментоловым сиропом</a>
-        <a href="#">Быстрый просмотр</a>
+        <span class="price">435р<span>/кг</span></span>
+        <a href="#" class="link-light">Сливочное с ментоловым сиропом</a>
+        <a href="#" class="button button-small">Быстрый просмотр</a>
       </div>
 
       <div class="product">
         <img src="img/icecream11.jpg" width="267" height="267" alt="">
-        <span>355р<span>/кг</span></span>
-        <a href="#">Сливочное с кусочками черного шоколада</a>
-        <a href="#">Быстрый просмотр</a>
+        <span class="price">355р<span>/кг</span></span>
+        <a href="#" class="link-light">Сливочное с кусочками черного шоколада</a>
+        <a href="#" class="button button-small">Быстрый просмотр</a>
       </div>
 
       <div class="product">
         <img src="img/icecream12.jpg" width="267" height="267" alt="">
-        <span>420р<span>/кг</span></span>
-        <a href="#">Сливочное с мятным сиропом</a>
-        <a href="#">Быстрый просмотр</a>
+        <span class="price">420р<span class="">/кг</span></span>
+        <a href="#" class="link-light">Сливочное с мятным сиропом</a>
+        <a href="#" class="button button-small">Быстрый просмотр</a>
       </div>
     </section>
   </main>
@@ -192,14 +196,14 @@
       </ul>
   
       <ul class="other-nav">
-        <li><a href="#" class="heart">Для поставщиков</a></li>
-        <li><a href="#">О производстве</a></li>
-        <li><a href="#">Наши документы</a></li>
-        <li><a href="#">Экологические стандарты</a></li>
+        <li><a href="#" class="heart" class="link-light">Для поставщиков</a></li>
+        <li><a href="#" class="link-light">О производстве</a></li>
+        <li><a href="#" class="link-light">Наши документы</a></li>
+        <li><a href="#" class="link-light">Экологические стандарты</a></li>
       </ul>
   
     <div class="copyright">
       <img src="img/logo-htmlacademy-small.svg" width="108" height="39" alt="logo">
-      <p>Сделано в <a href="#">HTML Academy</a> &copy; 2019</p>
+      <p>Сделано в <a href="#" class="link-light">HTML Academy</a> &copy; 2019</p>
     </div>
   </footer>

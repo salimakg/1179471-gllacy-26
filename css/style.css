@@ -16,36 +16,29 @@ body {
     
 }
 
-a {
-    color: #ffffff;
-    font-size: 16px;
-    line-height: 18px;
-    font-weight: medium;
-    text-decoration: underline;
-    
-}
 
-a.link-light {
+
+.link-light {
     color: #ffffff; 
 }
 
-a.link-dark {
+.link-dark {
     color: #323232;
 }
 
-a.link-light:hover {
+.link-light:hover {
     color: #ffbc9e;
 }
 
-a.link-light:focus {
+.link-light:focus {
     color: #ffbc9e;
 }
 
-a.link-dark:hover {
+.link-dark:hover {
     color: #e84d37;
 }
 
-a.link-dark:focus {
+.link-dark:focus {
     color: #e84d37;
 }
 
@@ -53,18 +46,18 @@ a.link-dark:focus {
     font-size: 45px;
     line-height: 45px;
     color: #ffffff;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 .weight {
     font-size: 30px;
     line-height: 45px;
     color: #ffffff;
-    font-weight: bold
+    font-weight: 700
 }
 
 .button {
-    font-weight: bold;
+    font-weight: 700;
     color: #ffffff;
     
 }
@@ -96,22 +89,7 @@ a.link-dark:focus {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07)), linear-gradient(to bottom, #e74a35, #f26843);
 }
 
-input {
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: regular;
-    color: #999999;
-    background-color: #ffffff;
-    border: solid 1px rgba(178, 178, 178, 0.52);
-}
 
-input:hover {
-    border: solid 2px rgba(154, 154, 154, 0.52);
-}
-
-input:focus {
-    border: solid 2px rgba(46, 136, 228, 0.52);
-}
 
 
 .site-navigation {
@@ -139,7 +117,7 @@ input:focus {
 .user-navigation {
     font-size: 14px;
     line-height: 16px;
-    font-weight: medium;
+    font-weight: 500;
 
 }
 
@@ -172,14 +150,14 @@ input:focus {
 .features b {
     font-size: 24px;
     line-height: 30px;
-    font-weight: medium;
+    font-weight: 500;
     color: #323232;
 } 
 
 .features p {
     font-size: 16px;
     line-height: 22px;
-    font-weight: regular;
+    font-weight: 400;
     color: #323232;
 } 
 
@@ -190,14 +168,14 @@ input:focus {
 .blog p {
     font-size: 16px;
     line-height: 22px;
-    font-weight: medium;
+    font-weight: 500;
     color: #323232;
 }
 
 .blog h1 a {
     font-size: 24px;
     line-height: 30px;
-    font-weight: bold;
+    font-weight: 700;
     text-align: left;
     color: #323232;
     text-decoration: underline;
@@ -212,7 +190,7 @@ input:focus {
 .newsletter p {
     font-size: 16px;
     line-height: 22px;
-    font-weight: regular;
+    font-weight: 400;
     color: #5a5a5a;
 }
 
@@ -228,25 +206,25 @@ input:focus {
     font-size: 13px;
     line-height: 18px;
     color: inherit;
-    font-weight: regular;
+    font-weight: 400;
 }
 
 .other-nav .for-suppliers {
     
-    font-weight: bold;
+    font-weight: 700;
 }
 
 .copyright p {
     font-size: 12px;
     line-height: 18px;
-    font-weight: regular;
+    font-weight: 400;
     color: #fefefe;
 }
 
 .copyright a {
     font-size: 12px;
     line-height: 18px;
-    font-weight: regular;
+    font-weight: 400;
     color: #fefefe;
 }
 
@@ -258,7 +236,7 @@ input:focus {
 .user-navigation .has-products {
     font-size: 14px;
     line-height: 16px;
-    font-weight: medium;
+    font-weight: 500;
     color: #323232;
     background-color: #ffffff;
 } 
@@ -266,7 +244,7 @@ input:focus {
 .site-navigation a:hover {
     font-size: 16px;
     line-height: 18px;
-    font-weight: bold;
+    font-weight: 700;
     color: #323232;
     background-color: #f7f6f3; 
 }
@@ -274,7 +252,7 @@ input:focus {
 .user-navigation a:hover {
     font-size: 14px;
     line-height: 16px;
-    font-weight: medium;
+    font-weight: 500;
     color: #323232;
     background-color: #ffffff;
 }
@@ -290,14 +268,14 @@ input:focus {
 .breadcrumbs li {
     font-size: 14px;
     line-height: 16px;
-    font-weight: regular;
+    font-weight: 400;
     color: #ffffff;
 }
 
-h1 {
+.page-title {
     font-size: 35px;
     line-height: 41px;
-    font-weight: bold;
+    font-weight: 700;
     color: #ffffff;
 }
 
@@ -305,6 +283,6 @@ h1 {
     color: #ffffff;
     font-size: 16px;
     line-height: 22px;
-    font-weight: medium;
+    font-weight: 500;
     text-align: center;
 }

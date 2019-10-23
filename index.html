@@ -9,12 +9,11 @@
   </head>
   <body>
 
-  <header>
-
-    <div>
-      <a class="logo"><img src="img/index-logo.svg"  width="154" height="64" alt="Логотип Gllacy Shop"></a>
-      <nav class="site-navigation">
-        <ul>
+  <header class="main-header">
+    
+      <nav class="main-navigation container">
+        <a class="main-header-logo"><img src="img/index-logo.svg"  width="154" height="64" alt="Логотип Gllacy Shop"></a> 
+        <ul class="site-navigation">
           <li>
             <a href="/catalog" class="link-light">Каталог</a>
             <ul class="catalog-nav">
@@ -29,53 +28,52 @@
           <li><a href="/delivery-and-payment" class="link-light">Доставка и оплата</a></li>
           <li><a href="/about-company" class="link-light">О компании</a></li>
         </ul>
-      </nav>
-    <nav class="user-navigation">
-      <ul>
-        <li>
-          <a href="#" class="link-light">Поиск</a>
-          <section class="search-form">
-            <form action="https://echo.htmlacademy.ru/" method="post">
-              <label for="search">Поиск</label>
-              <input type="text" name="search" placeholder="Что ищем?" id="search">
-              <button type="submit">Отправить</button>
-            </form>
-          </section>
-        </li>
-        <li>
-          <a href="#" class="link-light">Вход</a>
-          <section class="email-form">
-            <form action="http://echo.htmlacademy.ru" method="post">
-              <p>
-                <label for="email">Электронная почта</label>
-                <input type="email" name="email" placeholder="Электронная почта" id="email">
-              </p>
-              <p>
-                <label for="password">Пароль</label>
-                <input type="password" name="password" placeholder="Пароль" id="password">
-              </p>
-              <button type="submit">Войти</button>
-              <div class="form-links">
-                <a href="#" class="link-dark">Забыли пароль?</a><br>
-                <a href="#" class="link-dark">Новая регистрация</a>
-              </div>
-            </form>
-          </section>
-
-        </li>
         
-        <li><a href="#" class="link-light">Пусто</a></li>
-      </ul>
-    </nav>      
-  </div>
+        <ul class="user-navigation">
+          <li>
+            <a href="#" class="link-light">Поиск</a>
+            <section class="search-form">
+              <form action="https://echo.htmlacademy.ru/" method="post">
+                <label for="search">Поиск</label>
+                <input type="text" name="search" placeholder="Что ищем?" id="search">
+                <button type="submit">Отправить</button>
+              </form>
+            </section>
+          </li>
+          <li>
+            <a href="#" class="link-light">Вход</a>
+            <section class="email-form">
+              <form action="http://echo.htmlacademy.ru" method="post">
+                <p>
+                  <label for="email">Электронная почта</label>
+                  <input type="email" name="email" placeholder="Электронная почта" id="email">
+                </p>
+                <p>
+                  <label for="password">Пароль</label>
+                  <input type="password" name="password" placeholder="Пароль" id="password">
+                </p>
+                <button type="submit">Войти</button>
+                <div class="form-links">
+                  <a href="#" class="link-dark">Забыли пароль?</a><br>
+                  <a href="#" class="link-dark">Новая регистрация</a>
+                </div>
+              </form>
+            </section>
 
-    <div class="contacts">
-      <span>с 10 до 20, ежедневно</span>
-      <a href="tel:88124502525">8 812 450-25-25</a>
-    </div>
+          </li>
+          
+          <li><a href="#" class="link-light">Пусто</a></li>
+        </ul>
+      </nav>      
+        
     
+      <div class="contacts">
+        <span>с 10 до 20, ежедневно</span>
+        <a href="tel:88124502525">8 812 450-25-25</a>
+      </div>
   </header>
-  <main>
+  
+  <main class="container">
     <h1 class="visually-hidden">Gllacy Shop</h1>
 
     <section class="features">
@@ -89,7 +87,8 @@
       </div>
     </section>
     
-    <section>
+   
+    <section class="index-columns">
       <h2 class="visually-hidden">Блог</h2>
       <article class="blog">
         <p>Новое в нашем блоге</p>
@@ -107,14 +106,17 @@
         </form>
       </article>
     </section>
+
+    
+    
  
   </main>
 
 
-  <footer>
+  <footer class="main-footer">
 
-    
-      <ul class="social-links">
+    <div class="container">
+      <ul class="footer-social-links">
         <li><a href="http://twitter.com" aria-label="Твиттер"></a></li>
         <li><a href="http://instagram.com" aria-label="Инстаграм"></a></li>
         <li><a href="http://facebook.com" aria-label="Фейсбук"></a></li>
@@ -122,20 +124,24 @@
       </ul>
     
 
-   
-      <ul class="other-nav">
+    
+      <ul class="footer-other-nav">
         <li><a href="#" class="heart" class="link-light for-suppliers">Для поставщиков</a></li>
         <li><a href="#" class="link-light">О производстве</a></li>
         <li><a href="#" class="link-light">Наши документы</a></li>
         <li><a href="#" class="link-light">Экологические стандарты</a></li>
       </ul>
-    
+      
+  
+      <div class="footer-copyright">
+        <img src="img/logo-htmlacademy-small.svg" width="108" height="39" alt="logo">
+        <p>Сделано в <a href="#" class="link-light">HTML Academy</a> &copy; 2019</p>
+      </div>
 
-    <div class="copyright">
-      <img src="img/logo-htmlacademy-small.svg" width="108" height="39" alt="logo">
-      <p>Сделано в <a href="#" class="link-light">HTML Academy</a> &copy; 2019</p>
     </div>
+      
   </footer>
+    
     <section class="connection-form">
       <h1>Мы обязательно вам ответим!</h1>
       <button type="button">X</button>
